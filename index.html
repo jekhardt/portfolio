@@ -14,8 +14,7 @@
 
       <header class="row">
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <!-- TODO: picture element -->
-          <img class="img-responsive logo" src="images_src/ekhardt_solutions_logo.jpg" alt="Logo for Ekhardt Solutions">
+          <img class="img-responsive logo" src="images/ekhardt-solutions-logo.png" alt="Logo for Ekhardt Solutions">
         </div>
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 text-right text-uppercase">
           <h1 class="name">Jeff Ekhardt</h1>
@@ -31,7 +30,12 @@
 
       <section class="row hero">
         <div class="col-lg-12">
-          <img class="img-responsive" src="http://placehold.it/1175x500&text=HERO IMAGE">
+          <picture>
+            <source media="(min-width: 769px)" srcset="images/hero-2350_large_2x.jpg, images/hero-1175_large_1x.jpg" />
+            <source media="(min-width: 551px)" srcset="images/hero-1600_medium_2x.jpg 2x, images/hero-800_medium_1x.jpg" />
+            <source media="(max-width: 550px)" srcset="images/hero-small-1100_2x.jpg 2x, images/hero-small_550_1x.jpg" />
+            <img class="img-responsive" src="images/hero-2350_large_2x.jpg" alt="Jeff Ekhardt Portfolio Hero Image">
+          </picture>
         </div>
       </section>
 
@@ -39,25 +43,45 @@
         <div class="col-lg-12">
           <h2 class="featured-title">Featured Work</h2>
 
-          <section class="row text-center featured">
-            <div class="col-sm-4 col-md-4 col-lg-4">
-                <img class="img-responsive center-block" src="http://placehold.it/450x300&text=APPIFY" alt="APPIFY">
+          <section class="row text-center">
+            <figure class="col-sm-4 col-md-4 col-lg-4">
+              <a class="item-link" href="https://github.com/jekhardt/testlink-java-api/">
+                <picture>
+                  <source media="(min-width: 769px)" srcset="images/testlink-api-700_medium_2x.jpg 2x, images/testlink-api-350_medium_1x.jpg" />
+                  <source media="(min-width: 450px)" srcset="images/testlink-api-1400_large_2x.jpg 2x, images/testlink-api-700_large_1x.jpg" />
+                  <source media="(max-width: 449px)" srcset="images/testlink-api-700_medium_2x.jpg 2x, images/testlink-api-350_medium_1x.jpg" />
+                  <img class="img-responsive center-block" src="images/testlink-api-700_medium_2x.jpg" alt="Github TestLink API Project">
+                </picture>
+              </a>
+              <h2 class="item-title">TestLink Java API</h2>
+              <a class="item-link" href="https://github.com/jekhardt/testlink-java-api/">github.com/jekhardt/testlink-java-api/</a>
+            </figure>
 
-                <h2 class="item-title">testlink-java-api</h2>
-                <a class="item-link" href="https://github.com/jekhardt/testlink-java-api/">github.com/jekhardt/testlink-java-api/</a>
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-4">
-                <img class="img-responsive center-block" src="http://placehold.it/450x300&text=OpenWebDriver" alt="Github OpenWebDriver project">
+            <figure class="col-sm-4 col-md-4 col-lg-4">
+              <a  href="https://github.com/jekhardt/OpenWebDriver/">
+                <picture>
+                  <source media="(min-width: 769px)" srcset="images/open-webdriver-700_medium_2x.jpg 2x, images/open-webdriver-350_medium_1x.jpg" />
+                  <source media="(min-width: 450px)" srcset="images/open-webdriver-1400_large_2x.jpg 2x, images/open-webdriver-700_large_1x.jpg" />
+                  <source media="(max-width: 449px)" srcset="images/open-webdriver-700_medium_2x.jpg 2x, images/open-webdriver-350_medium_1x.jpg" />
+                  <img class="img-responsive center-block" src="images/open-webdriver-700_medium_2x.jpg" alt="Github Open Web Driver Project">
+                </picture>
+              </a>
+              <h2 class="item-title">Open WebDriver</h2>
+              <a class="item-link" href="https://github.com/jekhardt/OpenWebDriver/">github.com/jekhardt/OpenWebDriver/</a>
+            </figure>
 
-                <h2 class="item-title">OpenWebDriver</h2>
-                <a class="item-link" href="https://github.com/jekhardt/OpenWebDriver/">github.com/jekhardt/OpenWebDriver/</a>
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-4">
-                <img class="img-responsive center-block" src="http://placehold.it/450x300&text=BOKEH" alt="BOKEH">
-
-                <h2 class="item-title">testlink-plugin</h2>
-                <a class="item-link" href="https://github.com/jekhardt/testlink-plugin/">github.com/jekhardt/testlink-plugin/</a>
-            </div>
+            <figure class="col-sm-4 col-md-4 col-lg-4">
+              <a href="https://github.com/jekhardt/testlink-plugin/">
+                <picture>
+                  <source media="(min-width: 769px)" srcset="images/testlink-plugin-700_medium_2x.jpg 2x, images/testlink-plugin-350_medium_1x.jpg" />
+                  <source media="(min-width: 450px)" srcset="images/testlink-plugin-1400_large_2x.jpg 2x, images/testlink-plugin-700_large_1x.jpg" />
+                  <source media="(max-width: 449px)" srcset="images/testlink-plugin-700_medium_2x.jpg 2x, images/testlink-plugin-350_medium_1x.jpg" />
+                  <img class="img-responsive center-block" src="images/testlink-plugin-700_medium_2x.jpg" alt="Github TestLink Jenkins Plugin Project">
+                </picture>
+              </a>
+              <h2 class="item-title">TestLink Jenkins Plugin</h2>
+              <a class="item-link" href="https://github.com/jekhardt/testlink-plugin/">github.com/jekhardt/testlink-plugin/</a>
+            </figure>
           </section>
 
         </div>

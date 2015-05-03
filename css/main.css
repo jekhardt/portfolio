@@ -73,7 +73,7 @@ header {
   word-wrap: break-word;
 }
 
-.featured div {
+.featured figure {
   margin: 0 0 40px;
 }
 
@@ -87,10 +87,6 @@ header {
     font-size: .8em;
   }
 }
-
-/*@media screen and (max-width: 650px) {
-  
-}*/
 
 @media screen and (max-width: 769px) {
   .logo {
@@ -150,18 +146,4 @@ header {
   .item-link {
     font-size: 1.1em;
   }
-}
-
-
-/* Mockup */
-.mockup-overlay {
-  top: 0;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.4;
-}
-
-.mockup-overlay img {
-  width: 940px;
-  margin: 0 30px;
 }
