@@ -1,0 +1,167 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+
+  font-family: 'Lato', sans-serif;
+}
+
+img, embed, object, video {
+  max-width: 100%;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 1170px;
+}
+
+
+/* Header */
+
+header {
+  padding: 0 8px;
+  vertical-align: middle;
+  color: #001aab;
+}
+
+.logo {
+  max-width: 112px;
+}
+
+.name {
+  margin: 6px 0 -6px;
+  font-weight: 200;
+  font-size: 4.4em;
+}
+
+.name-subtitle {
+  font-weight: 300;
+  font-size: 1.6em;
+}
+
+.divider {
+  margin: 16px 0 33px;
+  height: 4px;
+  background-color: #bcbbbb;
+}
+
+
+/* Featured */
+
+.featured {
+  margin: 24px 0;
+  color: #bcbbbb;
+}
+
+.featured-title {
+  margin: 10px 10px 15px;
+  font-weight: 300;
+  font-size: 2.8em;
+}
+
+.item-title {
+  margin: 15px 0 5px;
+  font-weight: 300;
+  color: #001aab;
+}
+
+.item-link {
+  font-weight: 200;
+  font-size: 1.2em;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+.featured div {
+  margin: 0 0 40px;
+}
+
+
+@media screen and (min-width: 770px) and (max-width: 991px) {
+  .item-title {
+    font-size: 1.5em;
+  }
+
+  .item-link {
+    font-size: .8em;
+  }
+}
+
+/*@media screen and (max-width: 650px) {
+  
+}*/
+
+@media screen and (max-width: 769px) {
+  .logo {
+    max-width: 90px;
+  }
+  
+  .name {
+    font-size: 3em;
+  }
+
+  .name-subtitle {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .name {
+    font-size: 2.8em;
+  }
+
+  .name-subtitle {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .name {
+    font-size: 2.5em;
+  }
+
+  .name-subtitle {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    max-width: 60px;
+  }
+  
+  .name {
+    font-size: 2em;
+  }
+
+  .name-subtitle {
+    font-size: 1em;
+  }
+
+  .featured-title {
+    font-size: 2em;
+  }
+
+  .item-title{
+    font-size: 2em;
+  }
+
+  .item-link {
+    font-size: 1.1em;
+  }
+}
+
+
+/* Mockup */
+.mockup-overlay {
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.mockup-overlay img {
+  width: 940px;
+  margin: 0 30px;
+}
